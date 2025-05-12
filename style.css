@@ -19,7 +19,6 @@ a {
 body {
   display: flex;
   flex-direction: column;
-  background: rgb(70, 69, 69);
   background: white;
 }
 
@@ -35,7 +34,7 @@ nav ul {
   display: flex;
   justify-content: space-around;
   gap: 2rem;
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: bold;
   max-width: 90%;
 }
@@ -69,7 +68,7 @@ header {
   display: flex;
   justify-content: center;
   text-transform: uppercase;
-  background: url(./assets/img/bg.jpg);
+  background: #383838 url(./assets/img/bg.jpg) no-repeat center center;
   background-position: 50% 45%;
   margin-top: 2rem;
   padding: 5rem;
@@ -94,7 +93,43 @@ header {
   border-radius: 15px;
 }
 
-.main-header button:hover{
-    background: rgba(141, 139, 139, 0.555);
-    cursor: pointer;
+.main-header button:hover {
+  background: rgba(141, 139, 139, 0.555);
+  cursor: pointer;
+}
+
+.header-text {
+  display: flex;
+  justify-content: center;
+  padding: 3rem;
+  font-size: large;
+  font-weight: bold;
+}
+
+.header-text p {
+  display: flex;
+  text-align: center;
+  max-width: 80%;
+  line-height: 1.7rem;
+}
+
+.icon-part-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas: "GBS GA GG";
+  border: 1px solid red;
+  background: rgb(49, 47, 47);
+  color: white;
+}
+
+.list-icon-part:nth-child(1) {
+  grid-area: GBS;
+}
+
+.list-icon-part:nth-child(2) {
+  grid-area: GA;
+}
+
+.list-icon-part:nth-child(3) {
+  grid-area: GG;
 }
