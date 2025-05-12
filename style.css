@@ -1,0 +1,100 @@
+@font-face {
+  font-family: "Montserrat", sans-serif;
+  src: url(./assets/font/Montserrat.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  background: rgb(70, 69, 69);
+  background: white;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  text-transform: uppercase;
+  margin-top: 2rem;
+  background: white;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  gap: 2rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  max-width: 90%;
+}
+
+nav a {
+  position: relative;
+}
+
+nav a:hover {
+  color: rgb(187, 0, 255); /* ou la couleur de survol de ton choix */
+}
+
+nav a:hover::before {
+  content: "";
+  position: absolute;
+  top: -2rem;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background-color: rgb(187, 0, 255);
+  border-radius: 2px;
+}
+
+.language {
+  background: rgb(175, 175, 176);
+  padding: 0.7rem;
+  border-radius: 30px;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  text-transform: uppercase;
+  background: url(./assets/img/bg.jpg);
+  background-position: 50% 45%;
+  margin-top: 2rem;
+  padding: 5rem;
+  color: white;
+}
+
+.main-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.main-header button {
+  padding: 1rem 2rem 1rem 2rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: white;
+  background: none;
+  border: 2px solid white;
+  letter-spacing: 0.1rem;
+  border-radius: 15px;
+}
+
+.main-header button:hover{
+    background: rgba(141, 139, 139, 0.555);
+    cursor: pointer;
+}
