@@ -193,6 +193,7 @@ header {
   justify-content: space-around;
   padding: 2rem;
   padding-top: 5rem;
+  background: #DFDDDA;
 }
 
 .header-news h2 {
