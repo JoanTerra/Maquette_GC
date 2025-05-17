@@ -193,7 +193,7 @@ header {
   justify-content: space-around;
   padding: 2rem;
   padding-top: 5rem;
-  background: #DFDDDA;
+  background: #dfddda;
 }
 
 .header-news h2 {
@@ -230,6 +230,8 @@ header {
   grid-template-areas: "reu pgw inau";
   background: rgb(223, 221, 218);
   color: black;
+  padding-bottom: 5rem;
+  position: relative;
 }
 
 .news:nth-of-type(1) {
@@ -254,6 +256,9 @@ header {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  position: absolute;
+  margin-top: 3rem;
+  bottom: 3rem;
 }
 
 .link a {
@@ -503,6 +508,10 @@ footer {
     display: flex;
     flex-direction: column;
     gap: 5rem;
+  }
+
+  .link {
+    position: relative;
   }
 
   .contact {
